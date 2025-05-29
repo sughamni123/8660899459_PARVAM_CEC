@@ -19,7 +19,8 @@ public:
         length = l;
         width = w;
     }
-    double calculateArea() {
+    double calculateArea() 
+    {
         return length * width;
     }
 };
@@ -34,15 +35,16 @@ public:
         base = b;
         height = h;
     }
-    double calculateArea() {
-        return 0.5 * base * height;
+    double calculateArea() 
+    {
+        return 0.5*base*height;
     }
 };
 int main()
 {
     Rectangle rectangle(5, 4);
     Triangle triangle(6, 8);
-    cout << "Area of Rectangle: " << rectangle.calculateArea() << endl;
-    cout << "Area of Triangle: " << triangle.calculateArea() << endl;
+    cout << "Area of Rectangle: "<<rectangle.calculateArea()<<endl;
+    cout << "Area of Triangle: "<<triangle.calculateArea()<<endl;
     return 0;
 }
